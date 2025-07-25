@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1280, user-scalable=no" />
+    <title>ZIMS-TV (Tizen/WebOS/Vidaa 1280)</title>
+    <script>
+      // Platform detection (basic)
+      window.PLATFORM = (function () {
+        if (navigator.userAgent.includes("Tizen")) return "tizen";
+        if (navigator.userAgent.includes("Web0S") || navigator.userAgent.includes("WebOS"))
+          return "webos";
+        if (navigator.userAgent.includes("VIDAA")) return "vidaa";
+        return "browser";
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

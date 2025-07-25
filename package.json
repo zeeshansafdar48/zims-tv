@@ -7,11 +7,19 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "build:tizen:1920": "cp public/index.1920.html index.html && vite build && mv dist dist-tizen-1920",
+    "build:tizen:1280": "cp public/index.1280.html index.html && vite build && mv dist dist-tizen-1280",
+    "build:webos:1920": "cp public/index.1920.html index.html && vite build && mv dist dist-webos-1920",
+    "build:webos:1280": "cp public/index.1280.html index.html && vite build && mv dist dist-webos-1280",
+    "build:vidaa:1920": "cp public/index.1920.html index.html && vite build && mv dist dist-vidaa-1920",
+    "build:vidaa:1280": "cp public/index.1280.html index.html && vite build && mv dist dist-vidaa-1280"
   },
   "dependencies": {
+    "core-js": "^3.44.0",
     "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react-dom": "^19.1.0",
+    "regenerator-runtime": "^0.14.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.30.1",
