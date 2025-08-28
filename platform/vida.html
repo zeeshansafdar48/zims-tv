@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VIDAA App</title>
+    <!-- VIDAA specific meta tags -->
+    <meta name="application-name" content="Starzplay" />
+    <meta name="description" content="Starzplay app for Hisense VIDAA TVs" />
+    <!-- Polyfills or platform scripts if needed -->
+    <!-- <script src="scripts/vida-polyfills.js"></script> -->
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- Prevent context menu (optional, for TV UX) -->
+    <script>
+      document.addEventListener('contextmenu', event => event.preventDefault());
+    </script>
+  </body>
+</html>

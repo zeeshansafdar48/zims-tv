@@ -1,0 +1,14 @@
+{
+  "id": "com.starzplay.webos",
+  "version": "1.0.0",
+  "vendor": "Starzplay",
+  "type": "web",
+  "main": "index.html",
+  "title": "Starzplay webOS App",
+  "icon": "icon.png",
+  "appDescription": "Starzplay app for LG webOS TVs.",
+  "launchParams": {
+    "target": "detail",
+    "id": "123"
+  }
+}

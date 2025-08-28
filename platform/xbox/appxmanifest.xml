@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package
+  xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
+  xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
+  IgnorableNamespaces="uap">
+  <Identity Name="com.starzplay.xbox" Version="1.0.0.0" Publisher="CN=Starzplay" />
+  <Properties>
+    <DisplayName>Starzplay Xbox App</DisplayName>
+    <PublisherDisplayName>Starzplay</PublisherDisplayName>
+    <Description>Starzplay app for Xbox.</Description>
+    <Logo>images/logo.png</Logo>
+  </Properties>
+  <Applications>
+    <Application Id="App" Executable="App.exe" EntryPoint="App.App">
+      <uap:VisualElements DisplayName="Starzplay Xbox App" Square150x150Logo="images/logo.png" Description="Starzplay app for Xbox." BackgroundColor="transparent" />
+    </Application>
+  </Applications>
+  <!-- ...other Xbox config... -->
+</Package>

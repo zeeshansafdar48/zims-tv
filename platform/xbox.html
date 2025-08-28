@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Starzplay Xbox App</title>
+    <!-- Xbox specific meta tags -->
+    <meta name="application-name" content="Starzplay" />
+    <meta name="description" content="Starzplay app for Xbox" />
+    <!-- Polyfills or platform scripts if needed -->
+    <!-- <script src="scripts/xbox-polyfills.js"></script> -->
+    <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+  />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="xbox-app" content="true" />
+  <meta name="xbox-app-version" content="1.0" />
+  <meta name="xbox-app-platform" content="xbox" />
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- Prevent context menu (optional, for TV UX XBOX) -->
+    <script>
+      document.addEventListener('contextmenu', event => event.preventDefault());
+    </script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tizen App</title>
+    <!-- Tizen specific meta tags -->
+    <meta http-equiv="Application-Name" content="Starzplay" />
+    <meta http-equiv="CSP" content="default-src *; script-src 'self' 'unsafe-inline' 'unsafe-eval' *; style-src 'self' 'unsafe-inline' *; img-src 'self' data: *; connect-src *; media-src *; font-src *;" />
+    <meta name="description" content="Starzplay app for Tizen TVs" />
+    <!-- Tizen required script for web APIs -->
+    <script type="text/javascript" src="$WEBAPIS/webapis/webapis.js"></script>
+    <!-- Polyfills or platform scripts if needed -->
+    <!-- <script src="scripts/tizen-polyfills.js"></script> -->
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- Tizen recommended: prevent context menu -->
+    <script>
+      document.addEventListener('contextmenu', event => event.preventDefault());
+    </script>
+  </body>
+</html>

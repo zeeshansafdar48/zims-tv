@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tizen:application id="com.starzplay.tizen" package="com.starzplay" required_version="2.4">
+  <tizen:app-control>
+    <tizen:src-uris>
+      <tizen:src-uri>starzplay</tizen:src-uri>
+    </tizen:src-uris>
+    <tizen:operation name="http://tizen.org/appcontrol/operation/view"/>
+    <tizen:mime>application/x-starzplay</tizen:mime>
+  </tizen:app-control>
+</tizen:application>

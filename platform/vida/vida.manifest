@@ -1,0 +1,7 @@
+{
+  "id": "com.starzplay.vidaapp",
+  "name": "Starzplay Hisense App",
+  "version": "1.0.0",
+  "main": "index.html",
+  "description": "Starzplay app for Hisense VIDAA TVs."
+}
