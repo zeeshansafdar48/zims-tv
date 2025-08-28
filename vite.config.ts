@@ -59,9 +59,7 @@ export default defineConfig(({ command, mode }) => {
   const env = loadEnv(mode, process.cwd(), "");
   const platform = env["VITE_PLATFORM"] || "webos";
   const platformHtmlFile = resolve(__dirname, `platform/${platform}.html`);
-  console.log("==> ~ platformHtmlFile:", platformHtmlFile);
   const indexHtmlPath = resolve(__dirname, "index.html");
-  console.log("==> ~ indexHtmlPath:", indexHtmlPath);
 
   return {
     plugins: [

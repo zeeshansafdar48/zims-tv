@@ -1,9 +1,11 @@
 import { useRoutes } from "react-router-dom";
-import Login from "../pages/Login";
+import Login from "@/pages/Login";
+import Home from "@/pages/Home";
 import NotFound from "@/pages/NotFound";
 
 export default function AppRoutes() {
   const routes = useRoutes([
+    { path: "/", element: <Home /> },
     { path: "/login", element: <Login /> },
     // {
     //   path: "/dashboard",
@@ -23,7 +25,7 @@ export default function AppRoutes() {
     //   ),
     // },
     // Fallback for 404
-    { path: "*", element: <NotFound /> },
+    { path: "*", element: <NotFound /> }
   ]);
 
   return routes;

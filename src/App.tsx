@@ -3,11 +3,11 @@ import ErrorBoundary from "./middlewares/ErrorBoundary";
 
 function App() {
   return (
-    <>
-      <ErrorBoundary>
+    <ErrorBoundary>
+      <div>
         <AppRoutes />
-      </ErrorBoundary>
-    </>
+      </div>
+    </ErrorBoundary>
   );
 }
 
