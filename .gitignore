@@ -6,12 +6,16 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
-
+# Dependency directories
 node_modules
 dist
 dist-ssr
-*.local
-
+# Local environment files
+.env*.local
+.env
+.env*
+# Package lock files
+package-lock.json
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
